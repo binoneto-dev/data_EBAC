@@ -1,4 +1,4 @@
-# código de geração do gráfico
+# código de geração do gráfico 
 import pandas as pd
 import seaborn as sns
 
@@ -10,12 +10,14 @@ with sns.axes_style('darkgrid'):
       y = 'venda',
       data = dados_gasolina
   )
-
+  
   grafico_gasolina.set(
       title = 'Preço médio de venda de gasolina na cidade de São Paulo',
       xlabel = 'Dia',
       ylabel = 'Preço (R$)'
   )
+  
+  grafico_gasolina.legend(['Preço da Gasolina'])
 
-  figura = grafico_gasolina.get_figure()
+  figura = grafico_gasolina.get_figure()    
   figura.savefig('gasolina.png', dpi=600)
