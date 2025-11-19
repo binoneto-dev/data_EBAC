@@ -1,1 +1,1 @@
-print('Projeto EBAC modificado')
+print('Projeto EBAC')
